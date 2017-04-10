@@ -1,5 +1,14 @@
-export const actionCreatorName = () => {
+export const navigate = target => {
   return {
-    type: 'ACTION_TYPE'
+    type: 'NAVIGATE',
+    target
+  }
+}
+
+export const addToCart = (id, name) => {
+  return {
+    type: 'ADD_TO_CART',
+    id,
+    name
   }
 }
